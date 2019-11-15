@@ -1,0 +1,348 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relativeLayout3"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/screen"
+        android:layout_width="@dimen/num_width"
+        android:layout_height="@dimen/textBox_height"
+        android:background="@drawable/border_screen"
+        android:maxLength="50"
+        android:textSize="@dimen/textBox_textSize"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/E"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/num_height"
+        android:gravity="center"
+        android:text="@string/app_E"
+        android:textSize="@dimen/num_textSize"
+        app:layout_constraintEnd_toStartOf="@+id/V"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/screen" />
+
+    <TextView
+        android:id="@+id/V"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/num_height"
+        android:gravity="center"
+        android:text="@string/app_V"
+        android:textSize="@dimen/num_textSize"
+        app:layout_constraintEnd_toStartOf="@+id/T"
+        app:layout_constraintStart_toEndOf="@+id/E"
+        app:layout_constraintTop_toBottomOf="@+id/screen" />
+
+    <TextView
+        android:id="@+id/T"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/num_height"
+        android:gravity="center"
+        android:text="@string/app_T"
+        android:textSize="@dimen/num_textSize"
+        app:layout_constraintEnd_toStartOf="@+id/U"
+        app:layout_constraintStart_toEndOf="@+id/V"
+        app:layout_constraintTop_toBottomOf="@+id/screen" />
+
+    <TextView
+        android:id="@+id/U"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/num_height"
+        android:gravity="center"
+        android:text="@string/app_U"
+        android:textSize="@dimen/num_textSize"
+        app:layout_constraintEnd_toStartOf="@+id/K"
+        app:layout_constraintStart_toEndOf="@+id/T"
+        app:layout_constraintTop_toBottomOf="@+id/screen" />
+
+    <TextView
+        android:id="@+id/K"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/num_height"
+        android:gravity="center"
+        android:text="@string/app_K"
+        android:textSize="@dimen/num_textSize"
+        app:layout_constraintEnd_toStartOf="@+id/H"
+        app:layout_constraintStart_toEndOf="@+id/U"
+        app:layout_constraintTop_toBottomOf="@+id/screen" />
+
+    <TextView
+        android:id="@+id/H"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/num_height"
+        android:gravity="center"
+        android:text="@string/app_H"
+        android:textSize="@dimen/num_textSize"
+        app:layout_constraintEnd_toStartOf="@+id/O"
+        app:layout_constraintStart_toEndOf="@+id/K"
+        app:layout_constraintTop_toBottomOf="@+id/screen" />
+
+    <TextView
+        android:id="@+id/O"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/num_height"
+        android:gravity="center"
+        android:text="@string/app_O"
+        android:textSize="@dimen/num_textSize"
+        app:layout_constraintEnd_toStartOf="@+id/V2"
+        app:layout_constraintStart_toEndOf="@+id/H"
+        app:layout_constraintTop_toBottomOf="@+id/screen" />
+
+    <TextView
+        android:id="@+id/V2"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/num_height"
+        android:gravity="center"
+        android:text="@string/app_V"
+        android:textSize="@dimen/num_textSize"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/O"
+        app:layout_constraintTop_toBottomOf="@+id/screen" />
+
+
+    <TextView
+        android:id="@+id/clear"
+        android:layout_width="@dimen/num_width"
+        android:layout_height="@dimen/num_height"
+        android:background="@drawable/border_clear"
+        android:gravity="center"
+        android:text="@string/app_clear"
+        android:textSize="@dimen/num_textSize"
+        app:layout_constraintEnd_toStartOf="@+id/plusOrMinus"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/E" />
+
+    <TextView
+        android:id="@+id/plusOrMinus"
+        android:layout_width="@dimen/num_width"
+        android:layout_height="@dimen/num_height"
+        android:background="@drawable/border_action"
+        android:gravity="center"
+        android:text="@string/app_plusOrMinus"
+        android:textSize="@dimen/num_textSize"
+        app:layout_constraintEnd_toStartOf="@+id/percent"
+        app:layout_constraintStart_toEndOf="@+id/clear"
+        app:layout_constraintTop_toBottomOf="@+id/E" />
+
+    <TextView
+        android:id="@+id/percent"
+        android:layout_width="@dimen/num_width"
+        android:layout_height="@dimen/num_height"
+        android:background="@drawable/border_action"
+        android:gravity="center"
+        android:text="@string/app_percent"
+        android:textSize="@dimen/num_textSize"
+        app:layout_constraintEnd_toStartOf="@+id/division"
+        app:layout_constraintStart_toEndOf="@+id/plusOrMinus"
+        app:layout_constraintTop_toBottomOf="@+id/E" />
+
+    <TextView
+        android:id="@+id/division"
+        android:layout_width="@dimen/num_width"
+        android:layout_height="@dimen/num_height"
+        android:background="@drawable/border_action"
+        android:gravity="center"
+        android:text="@string/app_division"
+        android:textSize="@dimen/num_textSize"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/percent"
+        app:layout_constraintTop_toBottomOf="@+id/E" />
+
+
+    <TextView
+        android:id="@+id/seven"
+        android:layout_width="@dimen/num_width"
+        android:layout_height="@dimen/num_height"
+        android:background="@drawable/border_num"
+        android:gravity="center"
+        android:text="@string/app_seven"
+        android:textSize="@dimen/num_textSize"
+        app:layout_constraintEnd_toStartOf="@+id/eight"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/clear" />
+
+    <TextView
+        android:id="@+id/eight"
+        android:layout_width="@dimen/num_width"
+        android:layout_height="@dimen/num_height"
+        android:background="@drawable/border_num"
+        android:gravity="center"
+        android:text="@string/app_eight"
+        android:textSize="@dimen/num_textSize"
+        app:layout_constraintEnd_toStartOf="@+id/nine"
+        app:layout_constraintStart_toEndOf="@+id/seven"
+        app:layout_constraintTop_toBottomOf="@+id/plusOrMinus" />
+
+    <TextView
+        android:id="@+id/nine"
+        android:layout_width="@dimen/num_width"
+        android:layout_height="@dimen/num_height"
+        android:background="@drawable/border_num"
+        android:gravity="center"
+        android:text="@string/app_nine"
+        android:textSize="@dimen/num_textSize"
+        app:layout_constraintEnd_toStartOf="@+id/multiplication"
+        app:layout_constraintStart_toEndOf="@+id/eight"
+        app:layout_constraintTop_toBottomOf="@+id/percent" />
+
+    <TextView
+        android:id="@+id/multiplication"
+        android:layout_width="@dimen/num_width"
+        android:layout_height="@dimen/num_height"
+        android:background="@drawable/border_action"
+        android:gravity="center"
+        android:text="@string/app_multiplication"
+        android:textSize="@dimen/num_textSize"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/nine"
+        app:layout_constraintTop_toBottomOf="@+id/division" />
+
+
+    <TextView
+        android:id="@+id/four"
+        android:layout_width="@dimen/num_width"
+        android:layout_height="@dimen/num_height"
+        android:background="@drawable/border_num"
+        android:gravity="center"
+        android:text="@string/app_four"
+        android:textSize="@dimen/num_textSize"
+        app:layout_constraintEnd_toStartOf="@+id/five"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/seven" />
+
+    <TextView
+        android:id="@+id/five"
+        android:layout_width="@dimen/num_width"
+        android:layout_height="@dimen/num_height"
+        android:background="@drawable/border_num"
+        android:gravity="center"
+        android:text="@string/app_five"
+        android:textSize="@dimen/num_textSize"
+        app:layout_constraintEnd_toStartOf="@+id/six"
+        app:layout_constraintStart_toEndOf="@+id/four"
+        app:layout_constraintTop_toBottomOf="@+id/eight" />
+
+    <TextView
+        android:id="@+id/six"
+        android:layout_width="@dimen/num_width"
+        android:layout_height="@dimen/num_height"
+        android:background="@drawable/border_num"
+        android:gravity="center"
+        android:text="@string/app_six"
+        android:textSize="@dimen/num_textSize"
+        app:layout_constraintEnd_toStartOf="@+id/subtraction"
+        app:layout_constraintStart_toEndOf="@+id/five"
+        app:layout_constraintTop_toBottomOf="@+id/nine" />
+
+    <TextView
+        android:id="@+id/subtraction"
+        android:layout_width="@dimen/num_width"
+        android:layout_height="@dimen/num_height"
+        android:background="@drawable/border_action"
+        android:gravity="center"
+        android:text="@string/app_subtraction"
+        android:textSize="@dimen/num_textSize"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/six"
+        app:layout_constraintTop_toBottomOf="@+id/multiplication" />
+
+
+    <TextView
+        android:id="@+id/one"
+        android:layout_width="@dimen/num_width"
+        android:layout_height="@dimen/num_height"
+        android:background="@drawable/border_num"
+        android:gravity="center"
+        android:text="@string/app_one"
+        android:textSize="@dimen/num_textSize"
+        app:layout_constraintEnd_toStartOf="@+id/two"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/four" />
+
+    <TextView
+        android:id="@+id/two"
+        android:layout_width="@dimen/num_width"
+        android:layout_height="@dimen/num_height"
+        android:background="@drawable/border_num"
+        android:gravity="center"
+        android:text="@string/app_two"
+        android:textSize="@dimen/num_textSize"
+        app:layout_constraintEnd_toStartOf="@+id/three"
+        app:layout_constraintStart_toEndOf="@+id/one"
+        app:layout_constraintTop_toBottomOf="@+id/five" />
+
+    <TextView
+        android:id="@+id/three"
+        android:layout_width="@dimen/num_width"
+        android:layout_height="@dimen/num_height"
+        android:background="@drawable/border_num"
+        android:gravity="center"
+        android:text="@string/app_three"
+        android:textSize="@dimen/num_textSize"
+        app:layout_constraintEnd_toStartOf="@+id/addition"
+        app:layout_constraintStart_toEndOf="@+id/two"
+        app:layout_constraintTop_toBottomOf="@+id/six" />
+
+    <TextView
+        android:id="@+id/addition"
+        android:layout_width="@dimen/num_width"
+        android:layout_height="@dimen/num_height"
+        android:background="@drawable/border_action"
+        android:gravity="center"
+        android:text="@string/app_addition"
+        android:textSize="@dimen/num_textSize"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/three"
+        app:layout_constraintTop_toBottomOf="@+id/subtraction" />
+
+
+    <TextView
+        android:id="@+id/zero"
+        android:layout_width="@dimen/num_width"
+        android:layout_height="@dimen/num_height"
+        android:background="@drawable/border_num"
+        android:gravity="center"
+        android:text="@string/app_zero"
+        android:textSize="@dimen/num_textSize"
+        app:layout_constraintHorizontal_weight="0.99"
+        app:layout_constraintEnd_toStartOf="@+id/dot"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/one" />
+
+    <TextView
+        android:id="@+id/dot"
+        android:layout_width="@dimen/num_width"
+        android:layout_height="@dimen/num_height"
+        android:background="@drawable/border_num"
+        android:gravity="center"
+        android:text="@string/app_dot"
+        android:textSize="@dimen/num_textSize"
+        app:layout_constraintHorizontal_weight="0.48"
+        app:layout_constraintEnd_toStartOf="@+id/equally"
+        app:layout_constraintStart_toEndOf="@+id/zero"
+        app:layout_constraintTop_toBottomOf="@+id/three" />
+
+    <TextView
+        android:id="@+id/equally"
+        android:layout_width="@dimen/num_width"
+        android:layout_height="@dimen/num_height"
+        android:background="@drawable/border_action"
+        android:gravity="center"
+        android:text="@string/app_equally"
+        android:textSize="@dimen/num_textSize"
+        app:layout_constraintHorizontal_weight="0.48"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/dot"
+        app:layout_constraintTop_toBottomOf="@+id/addition" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
